@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="overlay">
+           <div class="overlay-content">
+               <h1>
+                   You did it!
+               </h1>
+               Refresh page to return
+           </div> 
+        </div>
+        
+        <header>
+            <p>Simple Login Website</p>
+        </header>
+        <div class="content">
+            <div class="card">
+                <form method="post" id="form">
+                    <label for="mail">E-mail</label><br>
+                    <input name="mail" type="text" placeholder="Enter e-mail" tabindex="1" id="mail">
+                    <p style="color:red" id="mailError"></p>
+                    <br>
+                    <label for="password">Password</label><br>
+                    <input name="password" type="password" placeholder="Enter password" tabindex="2" id="password">
+                    <p style="color:red" id="passError"></p>
+                    <br>
+                    <button type="submit" id="submit" tabindex="3">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            2021 &copy Hugo de Heus
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
