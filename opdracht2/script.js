@@ -18,14 +18,14 @@ function checkInputs() {
     } else if (!isEmail(mailValue)){
         document.getElementById('mailError').innerHTML = "This is not a valid e-mail!"
     } else{
+        document.getElementById('mailError').innerHTML = ""
         x++
     }
 
     if (passValue == '') {
         document.getElementById('passError').innerHTML = "Password can't be nothing!"
-    } else if(passValue < 6){
-        document.getElementById('passError').innerHTML = "Password is not correct!"
     } else{
+        document.getElementById('passError').innerHTML = ""
         x++
     }
 
